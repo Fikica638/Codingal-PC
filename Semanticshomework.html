@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Our Portfolio</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About us</h2>
+                <p>Hello! We are a small developing team for creating games on roblox! We have multiple popular
+                    games ike: Bloxburg and Jailbreak with a total of 5 billion plays.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>Creating a game about tennis, using sharp graphics and realistic movements, we will try to make it the best sports
+                        game on Roblox
+                    </p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>Making bloxburg able to play on multiple devices, right now you are only able to play on PC.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Hvae any ideas? Contcact us!</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Our portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

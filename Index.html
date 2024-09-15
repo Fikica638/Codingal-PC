@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Data Table</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Registration and Data Table</h1>
+            <nav>
+                <ul>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#data">User Data</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="register">
+            <div class="container">
+                <h2>Register</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="data">
+            <div class="container">
+                <h2>User Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>john_doe</td>
+                            <td>john@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>jane_doe</td>
+                            <td>jane@gmail.com</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Registration and Data Table. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

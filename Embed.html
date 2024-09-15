@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Embedded Media Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Gabarito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main-content {
+            margin: 20px 0;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Media Page</h1>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="video">
+                <h2>Embedded Video</h2>
+                <iframe src="https://youtu.be/Sv4Lof79MCI?si=jVC0_RSDx-w3tB2J" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="image">
+                <h2>Embedded Image</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/03760-Ohrid_%2816064511578%29.jpg" alt="Description of Image">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Media Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
